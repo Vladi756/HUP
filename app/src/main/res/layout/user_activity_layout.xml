@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="415dp"
+    android:layout_height="650dp"
+    android:layout_marginEnd="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:layout_editor_absoluteY="1000dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="374dp"
+            android:text="@string/how_anxious_are_you_feeling"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="45dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="335dp"
+            android:layout_height="255dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:hint="Tells us your behave"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="37dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/tell_us_about_your_day"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="73dp" />
+
+        <RatingBar
+
+            android:id="@+id/ratingBar"
+            android:layout_width="143dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="21dp"
+            android:contentDescription="@string/app_name"
+            android:progressBackgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="147dp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="?android:attr/listDivider"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/how_anxious_are_you_feeling"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar2"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="45dp" />
+
+        <FrameLayout
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_info_24"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="141dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="68dp"
+            android:progressBackgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="68dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/how_anxious_are_you_feeling"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar2"
+            tools:ignore="MissingConstraints" />
+
+        <RatingBar
+            android:id="@+id/ratingBar3"
+            android:layout_width="141dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="45dp"
+            android:progressBackgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="321dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="45dp"
+            android:text="Would you like to see a profesional?"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="321dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="45dp"
+            android:text="Do you want to talk with another person?"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="321dp"
+            android:layout_height="75dp"
+
+            android:text="Submit"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="45dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+        <FrameLayout
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:layout_constraintTop_toTopOf="@+id/button4"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_info_24"
+                app:tint="@color/white" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
