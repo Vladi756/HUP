@@ -7,9 +7,11 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3052536231884058" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.33695652173913043" />
         <entry key="app/src/main/res/layout/activity_main_after_login.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/chat_layout.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/chat_layout.xml" value="0.33" />
         <entry key="app/src/main/res/layout/login_layout.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/user_activity_layout.xml" value="0.22164614387556708" />
+        <entry key="app/src/main/res/layout/profesional.xml" value="0.17325227963525835" />
+        <entry key="app/src/main/res/layout/talking.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/user_activity_layout.xml" value="0.2" />
       </map>
     </option>
   </component>

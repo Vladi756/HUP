@@ -13,6 +13,9 @@
     <string name="email">email</string>
 
     <string name="welcom_to_the_hub_system">Welcom to the HUB system</string>
+    <string name="tells_us_your_behave">Tells us your behave</string>
+    <string name="would_you_like_to_see_a_profesional">Would you like to see a profesional?</string>
+    <string name="submit">Submit</string>
 
 
 </resources>

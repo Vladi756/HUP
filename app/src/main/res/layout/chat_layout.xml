@@ -10,9 +10,13 @@
         android:id="@+id/scrollView2"
         android:layout_width="403dp"
         android:layout_height="440dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputEditText2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="66dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:ignore="MissingConstraints">
 
     </ScrollView>
@@ -22,11 +26,14 @@
         android:layout_width="59dp"
         android:layout_height="56dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="3dp"
-        tools:srcCompat="@tools:sample/avatars"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        android:contentDescription="TODO" />
+        tools:srcCompat="@tools:sample/avatars" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -39,14 +46,15 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText2"
         android:layout_width="411dp"
         android:layout_height="43dp"
         android:layout_marginTop="27dp"
         android:layout_marginBottom="1dp"
         android:background="@color/white"
-        android:hint="@string/hint"
+        android:hint="type in chat"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
